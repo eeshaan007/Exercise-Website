@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lab 4 by Mohit Gupta</title>
+		<meta charset="utf-8">
+		<link href="Mystyle.css" rel="stylesheet" type="text/css" >
+	</head>
+	<body>
+		<div id="wrapper">
+			<header class="center">
+				<h1>Purchase</h1>
+				<p>Please enter the following information. Fields marked with an asterisk (<span class="required">*</span>) are required.</p>
+			</header>
+			<div id="content">
+				<form action="javascript:void(0);" method="post">
+			<fieldset>
+				<legend>Personal Information</legend>
+				<table>
+				<tr>
+					<td><strong class="required">*</strong>First Name:</td> 
+						<td><input type="text" name="firstname"></td>
+						</tr>
+				<tr>
+					<td><strong class="required">*</strong>Last Name:</td> 
+						<td><input type="text" name="lastname"></td>
+						</tr>
+				<tr>
+					<td><strong class="required">*</strong>Address:</td> 
+					<td>	<input type="text" name="address" size="40"> </td>
+						</tr>
+				<tr>
+					<td><strong class="required">*</strong>City:</td> 
+						<td><input type="text" name="city"></td>
+						</tr>
+				<tr>
+					<td><strong class="required">*</strong>Province:</td> 
+					<td>	 <select name="province">
+	 <option value="A">Select a province</option>						 
+    <option value="BC">British Columbia</option>
+    <option value="AB">Alberta</option> 
+    <option value="SK">Saskatchewan</option>
+    <option value="MB">Manitoba</option>
+    <option value="ON">Ontario</option>
+    <option value="QC">Quebec</option>
+    <option value="NB">New Brunswick</option>
+    <option value="NS">Nova Scotia</option>
+	<option value="PE">Prince Edward Island</option>
+    <option value="NF">Newfoundland</option>
+    <option value="YK">Yokun</option>
+    <option value="NWT">Northwest Territories</option>
+	<option value="NU">Nunavut</option>
+  </select></td>
+						</tr>
+                    <tr>
+					<td><strong class="required">*</strong>Select Plan:</td> 
+					<td>	 <select name="plan">
+	 <option value="A">Select a Plan</option>						 
+    <option value="B">Bronze Plan</option>
+    <option value="S">Silver Plan</option>
+    <option value="G">Gold Plan</option>
+    <option value="P">Platinum Plan</option>
+    
+  </select></td>
+						</tr>
+				<tr>
+					<td><strong class="required">*</strong>Postal Code:</td> 
+					<td><input type="text" name="postalcode" size="6"> </td>
+						</tr>
+				<tr>
+					<td><strong class="required">*</strong>Email Address:</td> 
+						<td><input type="text" name="emailaddress"></td>
+						</tr>
+				<tr>
+					<td><strong class="required">*</strong>Home Phone:</td> 
+						<td><input type="text" name="homephone"> </td>
+						</tr>
+				<tr>
+					<td>Work Phone:</td> 
+					<td><input type="text" name="workphone"> </td>
+						</tr>	
+				</table>
+			</fieldset>
+			<fieldset>
+				<legend>Payment Information</legend>
+				<table>
+				<tr> 
+					<td>Credit Card Type</td>
+			<td><img src="images/visa.png" alt="error"><input type="radio" name="creditCard" id="creditCardVisa" > 
+  			<img src="images/amex.png" alt="error"><input type="radio" name="creditCard" id="creditCardAmex"> 
+ 			<img src="images/mastercard.png" alt="error"><input type="radio" name="creditCard" id="creditCardMastercard"></td> 
+					
+					</tr>
+				
+				<tr>
+					<td> Credit Card Number </td> 
+						<td><input type="text" name="CreditCardNumber"></td>
+						</tr>
+				
+				<tr>
+					<td> Expiry(MM/YY) </td> 
+					<td><input type="text" name="Expiry" size="5"> <strong> / </strong>
+					<input type= "text" name=" Expiry1 " size="5" ></td>
+						</tr>
+				</table>
+				
+			</fieldset>
+			<fieldset>
+				<legend>Agree and Submit</legend><table>
+					<tr>
+						<td>Check if you agree with our<a href="#"> Terms and conditions</a></td>
+						<td> <input type="checkbox" name="agreeterms" id="terms"></td> 	
+						</tr>
+				<tr>
+					<td><input type="submit" name="submit" value="Submit Registration">
+						<input type="reset" name="reset" value="reset"></td>
+						</tr>
+				</table>
+			</fieldset>
+					</form>
+			</div>
+			<footer>	
+				<p class="center">&copy;2013 CST8285. All rights reserved.</p>
+                
+			</footer>
+		</div>
+	</body>
+</html>
